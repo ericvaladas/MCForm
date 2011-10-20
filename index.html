@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="assets/bpm_styles.css" type="text/css" media="screen" charset="utf-8" />
+    <script type="text/javascript" src="assets/bpm_libs.js"></script>
+    <script src="lib/form.js"></script>
+    <script src="lib/main.js"></script>
+    <title>MCForm</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    
+    <script type="text/x-handlebars">
+	    {{#with App.MyForm}}
+	        
+	        name <br />
+	        {{view SC.TextField valueBinding="name.value"}} {{name.invalidMessage}}
+	        <br />
+	        
+	        email <br />
+	        {{view SC.TextField valueBinding="email.value"}} {{email.invalidMessage}}
+	        <br />
+	        
+	        {{#view SC.Button target="App.MyForm" action="validate" }}
+	            submit
+	        {{/view}}
+	    {{/with}}
+	</script>
+    
+  </body>
+
+</html>
