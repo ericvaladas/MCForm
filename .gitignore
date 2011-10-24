@@ -11,3 +11,8 @@ tmp
 dist
 .DS_Store
 assets
+vendor/sproutcore-handlebars
+vendor/sproutcore-handlebars-format
+vendor/sproutcore-metal
+vendor/sproutcore-runtime
+vendor/sproutcore-views
