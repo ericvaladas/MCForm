@@ -13,20 +13,22 @@
     <script type="text/x-handlebars">
 	    {{#with App.MyForm}}
 	        
-	        name <br />
-	        {{view SC.TextField valueBinding="name.value"}} {{name.invalidMessage}}
+	        {{ name.label }}
+	        {{ form name.field }}
+	        {{ name.invalidMessage }}
+            <br />
+            {{ email.label }}
+	        {{ form email.field }}
+	        {{ email.invalidMessage }}
 	        <br />
-	        
-	        email <br />
-	        {{view SC.TextField valueBinding="email.value"}} {{email.invalidMessage}}
-	        <br />
-	        
-	        distance <br />
-	        {{view SC.TextField valueBinding="distance.value"}} {{distance.invalidMessage}}
-	        <br />
-	        
+            {{ amount.label }}
+	        {{ form amount.field }}
+	        {{ amount.invalidMessage }} 
+                
+                
+            <br /><br />    
 	        {{#view SC.Button target="App.MyForm" action="validate" }}
-	            submit
+	            save
 	        {{/view}}
 	    {{/with}}
 	</script>
