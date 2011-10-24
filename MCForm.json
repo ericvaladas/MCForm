@@ -4,9 +4,8 @@
   "bpm:build": {
     "bpm_libs.js": {
       "files": [
-        "lib"
-      ],
-      "minifier": "uglify-js"
+        ""
+      ]
     },
     "bpm_styles.css": {
       "files": [
@@ -15,6 +14,7 @@
     }
   },
   "dependencies": {
-    "sproutcore": ">= 0"
+    "sproutcore": ">= 0",
+    "sproutcore-handlebars": ">= 0"
   }
 }
